@@ -9,7 +9,7 @@
 
 static void print_help(const char *prog) {
     fprintf(stderr,
-        "cat2 version 2.0.0\n"
+        "cat2 version %s\n"
         "Usage: %s [OPTION]... [FILE]...\n"
         "Concatenate FILE(s) to standard output in auto-detected human readable form.\n"
         "\n"
@@ -28,7 +28,7 @@ static void print_help(const char *prog) {
         "  %s myfile.txt\n"
         "  %s -o raw.bin f - g\n"
         "  ssh user@zos 'cat /path/to/logfile' | %s\n",
-        prog, prog, prog, prog);
+        CAT2_VERSION, prog, prog, prog, prog);
 }
 
 int main(int argc, char **argv) {
@@ -52,7 +52,7 @@ int main(int argc, char **argv) {
             print_help(argv[0]);
             return 0;
         } else if (strcmp(argv[i], "-v") == 0 || strcmp(argv[i], "--version") == 0) {
-            printf("cat2 version 2.0.0\n");
+            printf("cat2 version %s\n", CAT2_VERSION);
             return 0;
         } else if (strcmp(argv[i], "-o") == 0) {
             if (i + 1 < argc) {

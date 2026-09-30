@@ -9,7 +9,7 @@
 #include <unistd.h>
 
 #define SERVER_NAME "cat2-mcp"
-#define SERVER_VERSION "2.0.0"
+#define SERVER_VERSION CAT2_VERSION
 
 typedef struct {
     char *data;

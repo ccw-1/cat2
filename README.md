@@ -23,6 +23,15 @@ To run tests:
 make test
 ```
 
+## Version
+
+`cat2` version `2.0.0`.
+
+To display version:
+```bash
+cat2 --version
+```
+
 ## CLI Usage
 
 ```bash
@@ -65,3 +74,7 @@ cat2 -o raw.bin mixed_input.txt
   }
 }
 ```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

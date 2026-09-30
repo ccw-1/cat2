@@ -4,6 +4,8 @@
 #include <stddef.h>
 #include <stdio.h>
 
+#define CAT2_VERSION "2.0.0"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
